@@ -1,2 +1,2 @@
 # GreekMemo
-GreekMemo - Use greek overkill by memorize information: words, terms, rules, formulas, chronology and etc.
+GreekMemo is a program that uses the Greek brute force method to memorize words, terms, formulas, rules, and other information.
