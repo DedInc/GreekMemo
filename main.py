@@ -85,13 +85,13 @@ def session(cards):
 			fails.append(card)
 		i += 1
 
-input(Fore.LIGHTCYAN_EX + 'Start memorize?')
+input('Start memorize? (ENTER)')
 system('cls')
 notify(Fore.LIGHTCYAN_EX, '\nMemorize cards: ')
 for card in cards:
 	dem = card.split(delim)
 	notify(Fore.LIGHTGREEN_EX, 'Question: {}\nAnswer: {}'.format(dem[0], dem[1]))
-	input(Fore.LIGHTCYAN_EX + 'Revised? (ENTER)')
+	input('Revised? (ENTER)')
 	system('cls')
 session(cards)
 lns = len(fails)
@@ -101,7 +101,7 @@ while lns != 0:
 	for fail in fails:
 		dem = fail.split(delim)
 		notify(Fore.LIGHTGREEN_EX, 'Question: {}\nAnswer: {}'.format(dem[0], dem[1]))
-		input(Fore.LIGHTCYAN_EX + 'Revised? (ENTER)')
+		input('Revised? (ENTER)')
 		system('cls')
 	session(fails)
 	lns = len(fails)
